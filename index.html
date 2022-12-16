@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christmas Anatol Page</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -33,19 +34,21 @@
     <main id="mainContent" class="main-content">
       <section class="hero">
         <div class="img-wrapper">
-          <picture>
-            <source srcset="./assets/img/3J6A9191.webp" type="image/webp" />
-            <img src="./assets/img/3J6A9191.jpg" alt="" />
-          </picture>
+          <!-- <picture>
+            <source srcset="./assets/img/3J6A9191.webp" type="image/webp" /> -->
+            <img src="../assets/img/hero.jpg" alt="" />
+          <!-- </picture> -->
         </div>
-        <p class="hero-legend__item">
-            Happy Holidays!<br>
-            We’re celebrating the holiday season with this special offer through the month of December:
-        </p>
+        <div class="hero__description--wrapper container">
+            <p class="hero__description">
+                Happy Holidays!<br>
+                We’re celebrating the holiday season with this special offer through the month of December:
+            </p>
+        </div>
       </section>
 
       <section class="rapid-wave">
-        <div class="container">
+        <div class="rapid-wave--wrapper container">
             <div class="rapid-wave__item img-wrapper">
             <picture>
                 <source srcset="./assets/img/3J6A9191.webp" type="image/webp" />
@@ -62,7 +65,7 @@
       </section>
 
       <section class="thunder">
-        <div class="container">
+        <div class="thunder--wrapper container">
             <div class="thunder__item proposial">
                 <span class="proposial__discount">10% OFF</span>
                 <h3 class="proposial__title">ALL IN-STOCK MANUAL SCREEN PRINTING PRESSES*</h3>

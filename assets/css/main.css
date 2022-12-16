@@ -1,0 +1,80 @@
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+section {
+  width: 100%;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2.5vw;
+  display: none;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.container {
+  max-width: 80vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: max(5vh, 2.5rem) auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero .img-wrapper {
+  min-height: 67.5vh;
+}
+
+.rapid-wave,
+.thunder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

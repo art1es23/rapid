@@ -53,6 +53,11 @@ img {
   height: auto;
   object-fit: cover;
 }
+svg {
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
 .img-wrapper {
   display: flex;
   flex-direction: column;
@@ -87,15 +92,30 @@ img {
 }
 
 .header {
-  position: fixed;
+  /* position: fixed;
   left: 0;
-  top: 0;
+  top: 0; */
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 2.5vw;
-  display: none;
+  padding: 0.5rem 5vw;
+  /* display: none; */
+  min-height: 5vh;
+  background-color: #000000;
+  color: #fff;
+}
+
+.logo {
+  max-width: 50%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  padding: 1vh 0;
+}
+
+.logo-img {
+  width: 80%;
 }
 
 .main-content {
@@ -106,12 +126,13 @@ img {
 }
 
 .container {
-  max-width: 80vw;
+  max-width: 65vw;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: max(5vh, 2.5rem) auto;
+  margin: 0 auto;
+  /* margin: max(5vh, 2.5rem) auto; */
 }
 
 .hero {
@@ -129,10 +150,11 @@ img {
 
 .hero__description--wrapper {
   flex-direction: column;
+  margin: max(5vh, 2.5rem) auto;
 }
 
 .hero__description {
-  max-width: 80%;
+  max-width: 100%;
   font-weight: 700;
   font-size: max(2.25vw, 32px);
   line-height: 1.25;
@@ -156,12 +178,11 @@ img {
 
 .proposial {
   width: 50%;
-  border: 1px solid #000;
   display: flex;
   flex-direction: column;
   gap: 1.5vh;
   justify-content: space-between;
-  padding: 2.5vh 1.5vw;
+  padding: 5vh 2.5vw;
 }
 
 .proposial__discount {
@@ -211,6 +232,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: max(5vh, 2.5rem) auto;
 }
 
 .restrictions__description {

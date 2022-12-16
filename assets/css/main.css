@@ -6,10 +6,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-color: #a90000;
+}
+
 html,
 body {
   font-size: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 section {
   width: 100%;
@@ -18,7 +22,6 @@ section {
 
 img {
   max-width: 100%;
-  width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -55,6 +58,7 @@ img {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: max(5vh, 2.5rem) auto;
 }
 
@@ -80,21 +84,91 @@ img {
 
   line-height: 1.75;
   max-width: 80%;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  /* font-family: "Roboto", sans-serif; */
   font-weight: 700;
   font-size: 45px;
   line-height: 55px;
 
   text-align: center;
 
-  color: #a90000;
+  color: var(--main-color);
 }
 
 .rapid-wave,
-.thunder {
+.thunder,
+.restrictions {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.proposial {
+  width: 55%;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  justify-content: space-between;
+  padding: 2.5vh 1.5vw;
+}
+
+.proposial__discount {
+  color: var(--main-color);
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 77px;
+}
+
+.proposial__title {
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+.text-bigger {
+  font-weight: 900;
+  font-size: 66px;
+  line-height: 77px;
+}
+
+.text-smaller {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 77px;
+}
+
+.proposial__description {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 55px;
+}
+
+.proposial__legend {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 65px;
+}
+
+.restrictions {
+  margin: max(7.5vh, 2.5rem) auto;
+  background: radial-gradient(50% 50% at 50% 50%, #393866 0%, #00063c 100%);
+}
+
+.restrictions--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.restrictions__description {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 65px;
+  color: #fff;
+  text-align: center;
 }
